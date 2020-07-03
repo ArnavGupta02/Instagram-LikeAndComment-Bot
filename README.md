@@ -1,4 +1,6 @@
 # Instagram-LikeAndComment-Bot
+## Want to boost your instagram? Want more followers/engagement on your profile? <br>
+#### Here's my instagram bot that will like and comment latest posts on input hashtags and earn you real followers and tons of engagement!
 ---
 ## Requirements:
 #### 1.Selenium Library. <br>
