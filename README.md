@@ -7,5 +7,5 @@
 ---
 ## Instructions:
 #### 1.Input your hashtags and desired comments in the code.
-#### 2.Input your Password (In session object).
+#### 2.Input your Username and Password (In session object).
 ---
