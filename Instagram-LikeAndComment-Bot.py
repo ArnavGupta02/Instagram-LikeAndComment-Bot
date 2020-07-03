@@ -15,7 +15,7 @@ class InstaBot:
     def __init__(self, username, password):
         self.username = username
         self.password = password
-        self.browser = webdriver.Firefox()
+        self.browser = webdriver.Firefox()  # for chrome : self.browser = webdriver.Chrome() 
 
     def login(self):
         browser = self.browser
@@ -94,8 +94,7 @@ class InstaBot:
 
             self.initial_posts()
             post_number = 1
-            # navigate to latest posts
-            while post_number <= 16:
+            while post_number <= 16:   # navigate to latest posts
                 self.next_post()
                 self.like_post()
                 try:
@@ -113,6 +112,6 @@ class InstaBot:
         """)
 
 
-session = InstaBot(username, password)  # Enter username and password in respective position
+session = InstaBot(username, password)  # Enter username and password in respective positions
 session.login()
 session.main()
