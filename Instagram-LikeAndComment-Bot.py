@@ -40,7 +40,7 @@ class InstaBot:
             '//*[@id="react-root"]/section/main/article/div[1]/div/div/div[1]/div[1]/a/div/div[2]')
         initial_posts.click()
 
-        for latest_posts in range(8):
+        for latest_posts in range(8):   # Navigate to latest Posts
             time.sleep(2)
             browser.find_element_by_link_text('Next').click()
 
@@ -94,7 +94,7 @@ class InstaBot:
 
             self.initial_posts()
             post_number = 1
-            while post_number <= 16:   # navigate to latest posts
+            while post_number <= 16:   # Like 15 Posts per hashtag
                 self.next_post()
                 self.like_post()
                 try:
