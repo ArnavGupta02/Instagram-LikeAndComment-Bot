@@ -81,7 +81,7 @@ class InstaBot:
 
         time.sleep(random.randint(3, 6))
         post_button = browser.find_element_by_xpath(
-            "/html/body/div[4]/div[2]/div/article/div[2]/section[3]/div/form/button")
+            "/html/body/div[4]/div[2]/div/article/div[3]/section[3]/div/form/button")
         time.sleep(random.randint(3, 6))
         post_button.click()
 
