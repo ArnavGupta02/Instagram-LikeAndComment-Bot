@@ -56,7 +56,7 @@ class InstaBot:
 
         time.sleep(random.randint(3, 6))
         like = browser.find_element_by_xpath(
-            "/html/body/div[4]/div[2]/div/article/div[2]/section[1]/span[1]/button")
+            "//html/body/div[4]/div[2]/div/article/div[3]/section[1]/span[1]/button")
         like.click()
 
     def comment_post(self):
@@ -65,12 +65,12 @@ class InstaBot:
         temp_comments_list = comments_list.copy()
 
         comment_button = browser.find_element_by_xpath(
-            "/html/body/div[4]/div[2]/div/article/div[2]/section[1]/span[2]/button")
+            "/html/body/div[4]/div[2]/div/article/div[3]/section[1]/span[2]/button")
         time.sleep(3)
         comment_button.click()
 
         comment_text_area = browser.find_element_by_xpath(
-            "/html/body/div[4]/div[2]/div/article/div[2]/section[3]/div/form/textarea")
+            "/html/body/div[4]/div[2]/div/article/div[3]/section[3]/div/form/textarea")
         time.sleep(3)
         comment_text_area.click()
         comment = random.choice(temp_comments_list)
